@@ -1,16 +1,27 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <title>Metaverse Example</title>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <p id="status">Enter the Metaverse</p>
+    <button id="enterBtn">Enter</button>
 
+    <script>
+        // Get references to the elements
+        const statusElement = document.getElementById("status");
+        const enterButton = document.getElementById("enterBtn");
+
+        // Add a click event listener to the button
+        enterButton.addEventListener("click", function() {
+            // Change the text of the p tag
+            statusElement.textContent = "Entered Metaverse";
+
+            // You can also create an h1 element and replace the p tag with it
+            // const h1Element = document.createElement("h1");
+            // h1Element.textContent = "Entered Metaverse";
+            // statusElement.replaceWith(h1Element);
+        });
+    </script>
 </body>
-
 </html>
